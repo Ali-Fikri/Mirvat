@@ -1,0 +1,133 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900;1000&display=swap'); 
+
+/* Start Global Rules */
+:root {
+    --white: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(#200016, #10001f);
+    height: 100vh;
+    list-style: none;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+/* End Global Rules */
+/* Start Header */
+header {
+    position: fixed;
+    width: 95%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+
+header .logo {
+    font-size: 2.2rem;
+    text-transform: capitalize;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+header nav li {
+    margin-right: 1rem;
+}
+
+header nav li a {
+    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+header nav li a:hover, .active {
+    background-color: var(--white);
+    color: #200016;
+}
+/* End Header */
+
+/* Start Main */
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main img {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+}
+
+.main::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#200016, transparent);
+}
+
+.main #moon {
+    mix-blend-mode: screen;
+    transform: translateY(80px);
+    -webkit-transform: translateY(80px);
+    -moz-transform: translateY(80px);
+    -ms-transform: translateY(80px);
+    -o-transform: translateY(80px);
+}
+.main .mirvat {
+    position: fixed;
+    color: var(--white);
+    font-size: 2rem;
+    text-transform: uppercase;
+    transform: translateY(-10rem);
+    -webkit-transform: translateY(-10rem);
+    -moz-transform: translateY(-10rem);
+    -ms-transform: translateY(-10rem);
+    -o-transform: translateY(-10rem);
+}
+/* End Main */
+
+/* Start Content */
+.content {
+    color: var(--white);
+    padding: 1.5rem;
+}
+.content h2 {
+    font-size: 2rem;
+    margin: 1.3rem;
+}
+.content p {
+    margin: 1.3rem;
+}
+/* End Content */
